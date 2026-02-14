@@ -1,0 +1,100 @@
+:root {
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+}
+
+* { box-sizing: border-box; }
+
+.container {
+  max-width: 920px;
+  margin: 0 auto;
+  padding: 16px;
+}
+
+.header h1 {
+  font-size: 22px;
+  margin: 0;
+}
+
+.sub {
+  color: #666;
+  margin: 8px 0 0;
+  line-height: 1.4;
+}
+
+.controls {
+  margin-top: 14px;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.input {
+  flex: 1;
+  padding: 10px 12px;
+  border-radius: 12px;
+  border: 1px solid #ddd;
+  font-size: 16px;
+  outline: none;
+}
+
+.select {
+  padding: 10px 12px;
+  border-radius: 12px;
+  border: 1px solid #ddd;
+  background: white;
+}
+
+.table {
+  margin-top: 14px;
+  border: 1px solid #eee;
+  border-radius: 14px;
+  overflow: hidden;
+}
+
+.row {
+  display: grid;
+  grid-template-columns: 1fr 180px;
+  gap: 12px;
+  padding: 12px;
+  border-top: 1px solid #f0f0f0;
+}
+
+.row.header {
+  background: #fafafa;
+  font-weight: 600;
+  border-top: none;
+}
+
+.money { text-align: right; }
+
+.empty {
+  padding: 14px;
+  color: #777;
+}
+
+.meta {
+  margin-top: 10px;
+  font-size: 13px;
+  color: #777;
+}
+
+/* ✅ Responsive mobile */
+@media (max-width: 600px) {
+  .controls {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .row {
+    grid-template-columns: 1fr;
+  }
+
+  .money {
+    text-align: left;
+    color: #222;
+  }
+
+  .row.header .money {
+    display: none; /* header gọn hơn trên mobile */
+  }
+}
