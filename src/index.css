@@ -92,9 +92,17 @@
   .money {
     text-align: left;
     color: #222;
+    font-weight: 700
   }
 
   .row.header .money {
     display: none; /* header gọn hơn trên mobile */
   }
+}
+
+.select {
+  padding: 10px 12px;
+  border-radius: 12px;
+  border: 1px solid #ddd;
+  background: white;
 }
