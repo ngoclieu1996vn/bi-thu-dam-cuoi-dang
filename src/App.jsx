@@ -20,7 +20,7 @@ export default function App() {
   const [q, setQ] = React.useState("");
 
   React.useEffect(() => {
-    fetch("/data.json")
+    fetch("data.json")
       .then((r) => r.json())
       .then(setRows)
       .catch(() => setRows([]));
